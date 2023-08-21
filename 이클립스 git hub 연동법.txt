@@ -1,0 +1,18 @@
+
+
+이클립스 git연동
+
+
+window -> show view -> other -> git repositor 클릭
+
+-> git repositor 창 열림 -> clone 클릭 -> url 클릭 -> git hub 저장 폴더 주소 붙여넣기
+
+-> user : git hub 아이디 / password : git hub 토큰 입력 (토큰은 git -> setting -> develop setting -> 새로 생성 (블로그 참고)
+
+-> git repositor 선택(여기에 있는 파일과 git이 연동되니 이클립스 자체 저장 폴더랑은 별개)(git이랑 연동하려면 여기에다가 따로 파일을 넣어줘야 push, pull이 가능)
+
+-> git repositor에 연동할 파일 및 폴더 넣기 -> git repositor된 폴더 우클릭 -> teams -> commit - > unstaged changes 파일 및 폴더 뜸
+
+-> ++ 이 부분 클릭하여 staged changes로 옮기기 -> commit message에 기록할 메세지 입력 -> 하단에 push 클릭 -> user와 password 입력 -> commit 완료
+
+이후에 pull도 똑같이하면 됨
