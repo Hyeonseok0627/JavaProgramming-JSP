@@ -1,0 +1,16 @@
+package chapter2;
+
+public class SwitchCase {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int ranking = 1;
+		char medalColor;
+		switch (ranking) {
+		case 1:
+			medalColor = 'G';
+			break;
+		}
+	}
+
+}

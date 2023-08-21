@@ -1,0 +1,11 @@
+package stream;
+
+public class TravelCustomer {
+	private String name;
+	private int age;
+	private int price;
+	
+	public TravelCustomer(String name,int age,int price) {
+		
+	}
+}

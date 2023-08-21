@@ -1,0 +1,17 @@
+package exception;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+
+public class ThrowsException {
+	public Class loadClass(String fileName, String className) throws
+	FileNotFoundException, ClassNotFoundException{
+		FileInputStream fis = new FileInputStream("b.txt");
+		Class c = Class.forName(className);
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

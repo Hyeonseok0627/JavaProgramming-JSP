@@ -1,0 +1,12 @@
+package practice;
+
+public class Q7 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CardFactory cardFactory = CardFactory.getInstance();
+		Card card1 = cardFactory.createCard();
+		Card card2 = cardFactory.createCard();
+	}
+
+}

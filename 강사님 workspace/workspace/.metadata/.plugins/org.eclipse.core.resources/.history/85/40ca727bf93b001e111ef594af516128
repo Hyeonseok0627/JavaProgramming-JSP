@@ -1,0 +1,13 @@
+package stream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class ArrayListStreamTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<String> slist = new ArrayList<String>();
+	}
+
+}

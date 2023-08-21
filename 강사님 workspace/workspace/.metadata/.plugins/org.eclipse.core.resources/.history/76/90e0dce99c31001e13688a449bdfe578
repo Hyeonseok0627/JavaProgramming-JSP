@@ -1,0 +1,13 @@
+package chapter2;
+
+public class Variable1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		int level = 10;
+		long level2 = 21000000000L;
+		char myChar = 'a';
+		System.out.println((int)myChar);
+	}
+
+}

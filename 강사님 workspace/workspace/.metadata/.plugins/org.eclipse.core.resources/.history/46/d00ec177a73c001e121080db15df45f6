@@ -1,0 +1,13 @@
+package exception;
+
+public class IDFormatTest {
+	private String userId;
+	public String getUserId() {
+		return userId;
+	}
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

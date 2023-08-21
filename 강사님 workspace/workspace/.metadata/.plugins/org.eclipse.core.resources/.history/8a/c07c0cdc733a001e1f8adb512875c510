@@ -1,0 +1,21 @@
+package map.treemap;
+
+import collection.Member;
+
+public class MemberTreeMapTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MemberTreeMap memberHashMap = new MemberTreeMap();
+		MemberTreeMap.addMember(new Member(1001,"이지원"));
+		MemberTreeMap.addMember(new Member(1002,"손민국"));
+		MemberTreeMap.addMember(new Member(1003,"박서훤"));
+		MemberTreeMap.addMember(new Member(1004,"홍길동"));
+		MemberTreeMap.showAllMember();
+		
+		MemberTreeMap.removeMember(1004);
+		MemberTreeMap.showAllMember();
+		
+	}
+
+}

@@ -1,0 +1,7 @@
+package singleton;
+
+public class CarFactory {
+	private static CarFactory instance = new CarFactory();
+	private static int carNum = 10000;
+	private CarFactory() {};
+}

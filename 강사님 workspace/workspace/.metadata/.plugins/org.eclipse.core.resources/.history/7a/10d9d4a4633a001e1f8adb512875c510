@@ -1,0 +1,26 @@
+package collection;
+
+import java.util.TreeSet;
+
+public class TreeSetTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TreeSet<String> treeSet = new TreeSet<String>();
+		treeSet.add("홍길동");
+		treeSet.add("강감찬");
+		treeSet.add("이순신");
+		for(String str : treeSet) {
+			System.out.println(str);
+		}
+		
+		TreeSet<Integer> treeSet2 = new TreeSet<Integer>();
+		treeSet2.add(3);
+		treeSet2.add(1);
+		treeSet2.add(2);
+		for(String str : treeSet2) {
+			System.out.println(str);
+		}
+	}
+
+}

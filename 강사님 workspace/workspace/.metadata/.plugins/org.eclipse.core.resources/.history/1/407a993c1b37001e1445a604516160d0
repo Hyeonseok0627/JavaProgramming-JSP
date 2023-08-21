@@ -1,0 +1,23 @@
+package practice1;
+
+import java.util.Scanner;
+
+public class Q8 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner s = new Scanner(System.in);
+		String str = s.next();
+		int count = s.nextInt();
+		if(str.equals("에스프레소")) {
+			count = count*2000;
+		}else if(str.equals("아메리카노")) {
+			count = count*2500;
+		}else if(str.equals("카푸치노")) {
+			count = count*3000;
+		}else if(str.equals("카페라떼")) {
+			count = count*3500;
+		}
+	}
+
+}

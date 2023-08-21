@@ -1,0 +1,13 @@
+package array;
+
+public class ArrayTest2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		double[] data = new double[5];
+		data[0] = 10.0;
+		data[2] = 20.0;
+		data[3] = 30.0;
+	}
+
+}

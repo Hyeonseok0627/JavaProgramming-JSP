@@ -1,0 +1,107 @@
+package practice;
+
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.TreeMap;
+
+import collection.Member;
+
+class CarFactory{
+	private static CarFactory instance = new CarFactory();
+	private static HashMap<String, Car> hashMap  = new HashMap<String, Car>();
+	
+	public static CarFactory getInstance() {
+		return instance;
+	}
+	public Car createCar(String name) {
+		Car car;
+		if(hashMap.containsKey(name)){
+			return car = hashMap.get(name);
+		}
+		car = new Car(name);
+		hashMap.put(name, car);
+		return car;
+	}
+}
+
+class CarFactory2{
+	private static CarFactory2 instance = new CarFactory2();
+	private static TreeMap<String, Car> treeMap  = new TreeMap<String, Car>();
+	
+	public static CarFactory2 getInstance() {
+		return instance;
+	}
+	public Car createCar(String name) {
+		Car car = new Car(name);
+		treeMap.put(name, car);
+		return treeMap.get(name);
+	}
+	public void show() {
+		Iterator<String> ir = treeMap.keySet().iterator();	
+		while(ir.hasNext()) {
+			String key = ir.next();
+			Car car = treeMap.get(key);
+			System.out.println(car);
+		}
+		System.out.println();
+	}
+}
+class Car implements Comparable<String>{
+	String name;
+	public Car(String name) {
+		this.name = name;
+	}
+	@Override
+	public int hashCode() {
+		// TODO Auto-generated method stub
+		return Integer.parseInt(name);
+	}
+	@Override
+	public boolean equals(Object obj) {
+		// TODO Auto-generated method stub
+		if(obj instanceof Car) {
+			Car car = (Car)obj;
+			if(this.name == car.name) {
+				return true;
+			}else {
+				return false;
+			}
+		}
+		return false;
+	}
+	@Override
+	public int compareTo(String o) {
+		// TODO Auto-generated method stub
+		return this.name.compareTo(o);
+	}
+}
+
+public class CarTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		CarFactory factory = CarFactory.getInstance();
+		Car sonata1 = factory.createCar("연수 차");
+		Car sonata2 = factory.createCar("연수 차");
+		System.out.println(sonata1 == sonata2);
+		
+		Car avante1 = factory.createCar("승연 차");
+		Car avante2 = factory.createCar("승연 차");
+		System.out.println(avante1 == avante2);
+		
+		System.out.println(sonata1 == avante1);
+		
+		CarFactory2 factory2 = CarFactory2.getInstance();
+		Car sonata3 = factory2.createCar("연수 차");
+		Car sonata4 = factory2.createCar("연수 차");
+		System.out.println(sonata3 == sonata4);
+		
+		Car avante3 = factory2.createCar("승연 차");
+		Car avante4 = factory2.createCar("승연 차");
+		System.out.println(avante3 == avante4);
+		
+		System.out.println(sonata3 == avante3);
+		factory2.show();
+	}
+
+}

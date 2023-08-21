@@ -1,0 +1,15 @@
+package collection;
+
+import java.util.ArrayList;
+
+class myStack{
+	private ArrayList<String> arrayStack = new ArrayList<String>();
+}
+public class StactTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

@@ -1,0 +1,58 @@
+package classpart;
+
+import java.time.LocalDateTime;
+
+public class Order {
+	String orderId;
+	String id;
+	String orderDate;
+	String name;
+	String goodsId;
+	String orderAddress;
+	public String getOrderId() {
+		return orderId;
+	}
+	public void setOrderId(String orderId) {
+		this.orderId = orderId;
+	}
+	public String getId() {
+		return id;
+	}
+	public void setId(String id) {
+		this.id = id;
+	}
+	public String getOrderDate() {
+		return orderDate;
+	}
+	public void setOrderDate(String orderDate) {
+		this.orderDate = orderDate;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public String getGoodsId() {
+		return goodsId;
+	}
+	public void setGoodsId(String goodsId) {
+		this.goodsId = goodsId;
+	}
+	public String getOrderAddress() {
+		return orderAddress;
+	}
+	public void setOrderAddress(String orderAddress) {
+		this.orderAddress = orderAddress;
+	}
+	
+	public void showOrderInfo() {
+		System.out.println("주문 번호 : "+orderId);
+		System.out.println("주문자 아이디 : "+id);
+		System.out.println("주문 날짜 : "+orderDate);
+		System.out.println("주문자 이름 : "+name);
+		System.out.println("주문 상품 번호 : "+goodsId);
+		System.out.println("배송 주소 : "+orderAddress);
+	}
+	
+}

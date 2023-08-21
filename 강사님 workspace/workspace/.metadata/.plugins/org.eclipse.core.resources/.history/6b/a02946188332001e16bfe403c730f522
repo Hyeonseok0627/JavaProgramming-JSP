@@ -1,0 +1,13 @@
+package classpart;
+
+import java.time.LocalDateTime;
+
+public class Order {
+	int orderNumber;
+	String orderId;
+	LocalDateTime orderDate;
+	String orderName;
+	String goodsNumber;
+	String orderAddress;
+	
+}

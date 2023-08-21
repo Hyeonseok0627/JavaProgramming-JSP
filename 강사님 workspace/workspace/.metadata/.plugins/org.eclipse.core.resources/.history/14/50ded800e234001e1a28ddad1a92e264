@@ -1,0 +1,11 @@
+package practice;
+
+public class CardFactory {
+	private static CardFactory instance = new CardFactory();
+	private static int serialNum = 1000;
+	private CardFactory() {}
+	
+	public void createCard(Card card) {
+		
+	}
+}

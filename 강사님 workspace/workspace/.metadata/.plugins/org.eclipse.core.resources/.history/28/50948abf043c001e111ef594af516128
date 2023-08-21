@@ -1,0 +1,13 @@
+package practice;
+class book{
+	private String name;
+	private int price;
+}
+public class LibraryTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

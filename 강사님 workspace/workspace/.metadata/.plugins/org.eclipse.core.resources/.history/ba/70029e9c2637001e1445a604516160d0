@@ -1,0 +1,22 @@
+package practice;
+
+public abstract class Car {
+	protected String name;
+	
+	protected abstract void drive();
+	protected abstract void stop();
+	
+	protected void start() {
+		System.out.println(name + " 시동을 켭니다.");
+	}
+	protected void turnoff() {
+		System.out.println(name + " 시동을 끕니다.");
+	}
+	
+	final protected void run() {
+		start();
+		drive();
+		stop();
+		turnoff();
+	}
+}

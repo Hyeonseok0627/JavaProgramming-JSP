@@ -1,0 +1,37 @@
+package staticex;
+
+public class StudentTest4 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		System.out.println(Student2.getSerialNum());
+		
+		Student2 studentLee = new Student2();
+		studentLee.setStudentName("이지원");
+		System.out.println(Student2.getSerialNum());
+		System.out.println(studentLee.studentName+" 학번:"+studentLee.studentID);
+		
+		Student2 studentSon = new Student2();
+		studentSon.setStudentName("손수경");
+		System.out.println(Student2.getSerialNum());
+		System.out.println(studentSon.studentName+" 학번:"+studentSon.studentID);
+		System.out.println(a);
+	}
+	
+	public void test() {
+		int a = 1;
+		System.out.println(a);
+		if(a>1) {
+			int testB = 2;
+			System.out.println(testB);
+		}
+		System.out.println(testB);
+	}
+
+}
+
+
+
+
+
+

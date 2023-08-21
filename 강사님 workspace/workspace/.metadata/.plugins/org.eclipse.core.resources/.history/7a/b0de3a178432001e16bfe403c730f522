@@ -1,0 +1,15 @@
+package classpart;
+
+public class ClassTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Man m = new Man();
+		m.setAge(40);
+		m.setName("James");
+		m.setMarried(true);
+		m.setChild(3);
+		m.showManInfo();
+	}
+
+}

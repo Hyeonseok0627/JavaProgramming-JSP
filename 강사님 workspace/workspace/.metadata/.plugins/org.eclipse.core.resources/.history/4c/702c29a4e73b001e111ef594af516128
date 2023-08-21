@@ -1,0 +1,5 @@
+package lambda;
+
+public interface StringConcat {
+	public void makeString(String sq, String s2);
+}

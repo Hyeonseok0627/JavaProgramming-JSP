@@ -1,0 +1,26 @@
+package classpart;
+
+public class ClassTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Man m = new Man();
+		m.setAge(40);
+		m.setName("James");
+		m.setMarried(true);
+		m.setChild(3);
+		m.showManInfo();
+		
+		System.out.println();
+		
+		Order o = new Order();
+		o.setOrderId("201803120001");
+		o.setId("abc123");
+		o.setOrderDate("2018년 3월 12일");
+		o.setName("홍길순");
+		o.setGoodsId("PD0345-12");
+		o.setOrderAddress("서울시 영등포구 여의도동 20번지");
+		o.showOrderInfo();
+	}
+
+}

@@ -1,0 +1,7 @@
+package practice;
+
+public class Cafe {
+	private String cafeName;
+	private int customerCount;
+	private int money;
+}

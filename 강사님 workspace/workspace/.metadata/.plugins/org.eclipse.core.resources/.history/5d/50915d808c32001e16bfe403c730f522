@@ -1,0 +1,18 @@
+package classpart;
+
+public class ClassTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Man m = new Man(40,"James",true,3);
+		m.showManInfo();
+		
+		System.out.println();
+		
+		//Order o = new Order("201803120001","abc123");
+//		o.setOrderId("201803120001");
+//		o.setId("abc123");
+		o./showOrderInfo();
+	}
+
+}

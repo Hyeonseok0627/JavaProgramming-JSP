@@ -1,0 +1,13 @@
+package practice;
+
+import java.util.HashSet;
+
+public class StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		HashSet<Student> set = new HashSet<Student>();
+		set.add(new Student("100",""));
+	}
+
+}

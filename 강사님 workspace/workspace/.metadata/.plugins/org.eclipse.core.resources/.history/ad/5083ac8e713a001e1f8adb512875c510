@@ -1,0 +1,13 @@
+package map.hashmap;
+
+import collection.Member;
+
+public class MemberHashMapTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MemberHashMap memberHashMap = new MemberHashMap();
+		memberHashMap.addMember(new Member(1001,"이지원"));
+	}
+
+}

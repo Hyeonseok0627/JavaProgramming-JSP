@@ -1,0 +1,12 @@
+package classpart;
+
+public class MyDateTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		MyDate date = new MyDate(30,2,2000);
+
+		date.setMonth(2);
+		date.setDay(31);
+	}
+}

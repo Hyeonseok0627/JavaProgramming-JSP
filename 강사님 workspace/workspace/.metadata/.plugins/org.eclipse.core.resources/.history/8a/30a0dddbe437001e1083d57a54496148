@@ -1,0 +1,24 @@
+package object;
+class Student{
+	int studentId;
+	String studentName;
+	
+	public Student(int studentId, String studentName) {
+		this.studentId = studentId;
+		this.studentName = studentName;
+	}
+	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return studentId + "," + studentName;
+	}
+}
+public class EqualsTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

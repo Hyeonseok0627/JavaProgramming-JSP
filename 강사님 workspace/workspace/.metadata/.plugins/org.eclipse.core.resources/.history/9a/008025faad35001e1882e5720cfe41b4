@@ -1,0 +1,19 @@
+package practice;
+
+import java.util.ArrayList;
+
+public class Q2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Character> alphabets2 = new ArrayList<Character>();
+		char[] alphabets = new char[58];
+		char ch = 'A';
+		for(int i=0; i<alphabets.length; i++) {
+			ch = ch+32;
+			alphabets[i] = ch;
+			System.out.println(alphabets[i] + "," + (int)alphabets[i]);
+		}
+	}
+
+}

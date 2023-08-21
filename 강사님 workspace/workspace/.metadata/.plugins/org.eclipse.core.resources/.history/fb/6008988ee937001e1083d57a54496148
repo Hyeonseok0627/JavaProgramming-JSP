@@ -1,0 +1,14 @@
+package object;
+class MyDate{
+	int day;
+	int month;
+	int year;
+	
+	public MyDate(int day, int month, int year) {
+		this.day = day;
+	}
+}
+
+public class MyDateTest {
+	
+}

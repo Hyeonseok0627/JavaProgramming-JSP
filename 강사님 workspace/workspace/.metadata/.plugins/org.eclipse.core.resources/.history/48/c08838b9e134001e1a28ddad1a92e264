@@ -1,0 +1,6 @@
+package practice;
+
+public class CardFactory {
+	private static CardFactory instance = new CardFactory();
+	private CardFactory() {}
+}

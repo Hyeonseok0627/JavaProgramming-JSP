@@ -1,0 +1,16 @@
+package practice;
+
+public class CardFactory {
+	private static CardCompany instance = new CardCompany();
+	private static int serialNum = 1000;
+	private CardFactory() {}
+	
+	public static CardCompany getInstance() {
+		return instance;
+	}
+	public Card createCard() {
+		Card card = new Card();
+		card.setCardNumber(++serialNum);
+		return card;
+	}
+}

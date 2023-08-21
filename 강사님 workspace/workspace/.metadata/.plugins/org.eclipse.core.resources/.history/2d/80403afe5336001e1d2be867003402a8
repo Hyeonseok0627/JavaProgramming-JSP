@@ -1,0 +1,14 @@
+package inheritance;
+
+public class OverridingTest1 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Customer lee = new Customer(10010, "이순신");
+		lee.bonusPoint = 1000;
+		
+		VIPCustomer kim = new VIPCustomer(10020, "김유신", 12345);
+		kim.bonusPoint = 10000;
+	}
+
+}

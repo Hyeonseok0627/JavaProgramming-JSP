@@ -1,0 +1,11 @@
+package practice2;
+
+public class Q1StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student[] students = new Student[3];
+		students[0] student1 = new Student();
+	}
+
+}

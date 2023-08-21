@@ -1,0 +1,30 @@
+package practice;
+
+public class Customer {
+	private String customerName;
+	private int money;
+	
+	public Customer(String name, int money){
+		this.customerName = name;
+		this.money = money;
+	}
+	
+	public void take(Cafe cafe, int money) {
+		this.money -= money;
+		cafe.take(money);
+	}
+	
+	public String getCustomerName() {
+		return customerName;
+	}
+	public void setCustomerName(String customerName) {
+		this.customerName = customerName;
+	}
+	public int getMoney() {
+		return money;
+	}
+	public void setMoney(int money) {
+		this.money = money;
+	}
+	
+}

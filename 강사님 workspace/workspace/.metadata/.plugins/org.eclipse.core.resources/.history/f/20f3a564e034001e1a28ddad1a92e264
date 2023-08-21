@@ -1,0 +1,14 @@
+package practice;
+
+public class Q5 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Customer kim = new Customer("김씨", 5000);
+		Customer kong = new Customer("콩씨", 10000);
+		Cafe starDabang = new Cafe();
+		Cafe kongDabang = new Cafe();
+		
+	}
+
+}

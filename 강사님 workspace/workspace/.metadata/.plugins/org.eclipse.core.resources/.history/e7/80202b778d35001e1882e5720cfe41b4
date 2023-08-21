@@ -1,0 +1,15 @@
+package array;
+
+public class Student {
+	private String studentId;
+	private String name;
+	
+	public Student() {};
+	public Student(String studentId, String name) {
+		this.studentId = studentId;
+		this.name = name;
+	};
+	public void showStudent() {
+		System.out.println(studentId + "," + name);
+	}
+}

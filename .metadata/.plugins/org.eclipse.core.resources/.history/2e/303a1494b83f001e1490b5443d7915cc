@@ -1,0 +1,16 @@
+eclipse.preferences.version=1
+encoding//src/innerclass/AnonymousInnerTest.java=MS949
+encoding//src/innerclass/InnerTest.java=MS949
+encoding//src/innerclass/LocalInnerTest.java=MS949
+encoding//src/lambda/Add.java=MS949
+encoding//src/lambda/MyNumber.java=MS949
+encoding//src/lambda/StringConcat.java=MS949
+encoding//src/lambda/TestLambda.java=MS949
+encoding//src/lambda/TestMyNumber.java=MS949
+encoding//src/lambda/TestStringConcat.java=MS949
+encoding//src/practice/q7/LibraryTest.java=MS949
+encoding//src/stream/ArrayListStreamTest.java=MS949
+encoding//src/stream/IntArrayTest.java=MS949
+encoding//src/stream/ReduceTest.java=MS949
+encoding//src/stream/TravelCustomer.java=MS949
+encoding/<project>=UTF-8

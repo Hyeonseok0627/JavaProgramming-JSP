@@ -1,0 +1,25 @@
+package practice2;
+
+public class Q1StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student[] students = new Student[3];
+		int[] score = {80,70,80};
+		students[0] = new Student(1,"홍길동","영문",score);
+		int[] score2 = {70,80,75};
+		students[1] = new Student(2,"박경미","컴공",score2);
+		int[] score3 = {80,85,90};
+		students[2] = new Student(2,"하성호","전컴",score);
+		
+		for(int i=0; i<students.length; i++) {
+			System.out.print(students[i].getSno() +" ");
+			System.out.print(students[i].getName() +" ");
+			System.out.print(students[i].getDept() +" ");
+			System.out.print(students[i].getSocres() +" ");
+			System.out.print(students[i].getSno() +" ");
+		}
+		
+	}
+
+}

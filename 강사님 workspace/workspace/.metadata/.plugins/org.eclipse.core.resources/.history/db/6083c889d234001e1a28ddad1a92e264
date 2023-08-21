@@ -1,0 +1,6 @@
+package singleton;
+
+public class Car {
+	private int carNum;
+	private String carName;
+}

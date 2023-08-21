@@ -1,0 +1,17 @@
+package array;
+
+import java.util.ArrayList;
+
+public class practice2 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		ArrayList<Student> studentList = new ArrayList<Student>();
+		students[0] = new Student("1001","James");
+		students[1] = new Student("1002","Tomas");
+		students[2] = new Student("1003","Edward");
+		for(int i=0; i<students.length; i++) {
+			students[i].showStudent();
+		}
+	}
+}

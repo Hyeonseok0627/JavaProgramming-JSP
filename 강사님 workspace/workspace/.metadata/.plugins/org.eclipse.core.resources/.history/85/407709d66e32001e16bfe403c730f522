@@ -1,0 +1,8 @@
+package classpart;
+
+public class student {
+	int studentID;
+	String studentName;
+	int grade;
+	String address;
+}

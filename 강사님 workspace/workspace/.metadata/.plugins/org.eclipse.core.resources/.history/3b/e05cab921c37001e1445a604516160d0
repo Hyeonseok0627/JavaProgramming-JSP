@@ -1,0 +1,54 @@
+package practice1;
+
+import java.util.Scanner;
+
+public class Q5 {
+	public static void main(String[] args) {
+//		Scanner s = new Scanner(System.in);
+//		boolean a = s.nextBoolean();
+//		String op = s.next();
+//		boolean b = s.nextBoolean();
+//		
+//		switch(op) {
+//			case "AND" :
+//				switch(a) {
+//					case true:
+//						switch(b) {
+//							case true: 
+//								System.out.println("true");
+//						}
+//				}
+//		}
+			
+			Scanner scanner = new Scanner(System.in);
+			System.out.print("논리 연산을 입력하세요>>");
+			String a, b;
+			String op;
+			a = scanner.next();
+			op = scanner.next();
+			b = scanner.next();
+			
+			switch (op) {
+			case "AND" :
+				switch (a) {
+				case "true" :
+					switch(b) {
+					case "true":System.out.println("true");break;
+					case "false" : System.out.println("false");break;
+					}break;
+				case "false":System.out.println("false");break;
+				}break;
+			case "OR" :
+				switch(a) {
+				case "true":System.out.println("true");break;
+				case "false":{
+					switch(b) {
+					case "true":System.out.println("true");break;
+					case "false":System.out.println("false");break;
+					}break;
+				}
+				}break;
+			
+		}
+	}
+}

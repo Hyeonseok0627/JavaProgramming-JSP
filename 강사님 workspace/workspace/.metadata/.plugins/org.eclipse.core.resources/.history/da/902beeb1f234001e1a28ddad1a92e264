@@ -1,0 +1,15 @@
+package practice2;
+
+public class Q1StudentTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Student[] students = new Student[3];
+		int[] score = {80,70,80};
+		students[0] = new Student(1,"홍길동","영문",score);
+		score = {70,80,75};
+		students[1] = new Student(2,"박경미","컴공",score);
+		students[2] = new Student(2,"하성호","전컴",score);
+	}
+
+}

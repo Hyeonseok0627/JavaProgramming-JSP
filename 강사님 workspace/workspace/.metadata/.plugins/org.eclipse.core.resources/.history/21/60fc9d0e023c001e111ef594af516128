@@ -1,0 +1,16 @@
+package stream;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class TravleTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		List<TravelCustomer> customerList = new ArrayList<>();
+		customerList.add(new TravelCustomer("이순신", 40, 100));
+		customerList.add(new TravelCustomer("김유신", 20, 100));
+		customerList.add(new TravelCustomer("홍길동", 10, 50));
+	}
+
+}

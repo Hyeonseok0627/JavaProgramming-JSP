@@ -1,0 +1,17 @@
+package collection.arraylist;
+
+import java.util.ArrayList;
+
+import collection.Member;
+
+public class MemberArrayList {
+	private ArrayList<Member> arrList;
+	
+	public MemberArrayList() {
+		arrList = new ArrayList<Member>();
+	}
+	
+	public addMember(Member member) {
+		arrayList.add(member);
+	}
+}
