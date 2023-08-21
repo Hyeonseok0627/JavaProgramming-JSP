@@ -10,7 +10,7 @@ public class InputStreamReaderTest {
 
 	public static void main(String[] args) {
 		
-		//InputStreamReader : 스트림을 문자로 읽어주게 하는 기능인 보조스트림 / FileInputStream : Byte로 읽는 기반 스트림
+		//InputStreamReader : 스트림을 문자로(문자열 단위로) 읽어주게 하는 기능인 보조스트림 / FileInputStream : Byte로 읽는 기반 스트림
 		//Byte로 읽는 거다보니 출력할 때는 문자로 해야 깨지지않고 출력이 되니깐, 해당 보조스트림을 써서 문자로 읽게하도록 만들어줌
 		try(InputStreamReader isr = new InputStreamReader(new FileInputStream("reader.txt"))){
 			int i;

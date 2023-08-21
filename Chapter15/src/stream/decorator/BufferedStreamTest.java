@@ -19,7 +19,7 @@ public class BufferedStreamTest {
 				BufferedInputStream bis = new BufferedInputStream(fis);
 				BufferedOutputStream bos = new BufferedOutputStream(fos)){
 		
-			millisecond = System.currentTimeMillis();
+			millisecond = System.currentTimeMillis(); //1970년1월1일 기준으로 현재일까지를 시간으로 환산하여 계산(millisecond: 0.001초 단위)
 			
 			int i;
 			while( ( i = bis.read()) != -1){
