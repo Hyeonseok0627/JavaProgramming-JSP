@@ -1,3 +1,5 @@
+<%--밑에 있는 건 디렉티브 태그 종류
+태그 안에 내용 작성법은 html 작성법인 속성종류="이름" 이런 방식으로 작성하고 한 칸 띄우고 다음 내용 추가작성 --%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
 <!DOCTYPE html>
@@ -9,16 +11,19 @@
 </head>
 <body>
 
-	<nav class = "navbar navbar-expand navbar-dark bg-dark">
+<%--<!-- -->해당 주석문은 웹 브라우저 F12키 소스 코드에서는 나타남--%>
+<%-- 그렇기 때문에 jsp에서는 jsp 주석문을 사용해줘야함--%>
+<!-- 	<nav class = "navbar navbar-expand navbar-dark bg-dark">
 		<div class = "container">
 			<div class = "navbar-header">
 				<a class = "navbar-brand" href="./welcome.jsp">Home</a>
 			</div>
 		</div>
-	</nav>
+	</nav> -->
+<%@ include file = "menu.jsp" %>
 <%!
-	String greeting = "Book Market Mall";
-	String tagline = "Welcome to Book Market!";
+	String greeting = "도서 웹 쇼핑몰";
+	String tagline = "Welcome to Web Market!";
 %>
 
 	<div class = "jumbotron">
@@ -34,11 +39,13 @@
 			<h3>
 				<%= tagline %>
 			</h3>
+			<hr>
 		</div>
 	</div>
 	
-	<footer class = "container">
+<!-- 	<footer class = "container">
 
-	</footer>
+	</footer> -->
+<%@ include file = "footer.jsp" %>
 </body>
 </html>
