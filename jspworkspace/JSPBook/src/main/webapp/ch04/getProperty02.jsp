@@ -10,6 +10,7 @@
 	<jsp:useBean id="person" class="ch04.com.dao.Person"></jsp:useBean>
 	<jsp:setProperty name="person" property="id" value="20182005" />
 	<jsp:setProperty name="person" property="name" value="홍길동"/>
+	<%--위에서 set해서 20182005/홍길동으로 바꿨고, 해당 바뀐 값을 get하는 것--%>
 	<p> 아이디 : <jsp:getProperty property="id" name="person" />
 	<p> 이 름 : <jsp:getProperty property="name" name="person" />
 </body>

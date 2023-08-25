@@ -36,6 +36,13 @@
 	 			<h3><%=product.getPname() %></h3>
 	 			<p><%=product.getDescription() %>
 	 			<p><%=product.getUnitPrice() %>원
+	 			
+	 			<%--해당 부분은 174페이지 내용 --%>
+	 			<%--./product.jsp?id=<%=product.getProductId()%>:임의로 버튼 클릭 시
+	 			들어가는 페이지 링크 주소 생성
+	 			btn btn-secondary: 부트스트랩에 있는 버튼 코드값 --%>
+	 			<p> <a href= " ./product.jsp?id=<%=product.getProductId()%>"
+	 			class= "btn btn-secondary" role="button"> 상세 정보 &raquo;</a>
 	 		</div>
 	 		<%
 	 			} 		

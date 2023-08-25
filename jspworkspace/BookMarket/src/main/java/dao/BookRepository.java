@@ -47,4 +47,20 @@ public class BookRepository {
 	public ArrayList<Book> getAllBooks() {
 		return listOfBooks;
   }
+	
+	//연습문제 6번에 의해 추가된 내용
+	public Book getBookById(String bookId) {
+		Book bookById = null;
+		
+		for (int i=0; i<listOfBooks.size(); i++) {
+			Book book = listOfBooks.get(i); 
+		
+			if (book != null && book.getBookId() != null && book.getBookId().equals(bookId)) {
+				bookById = book;
+				break;
+			}
+		}
+		return bookById;
+		
+	} 
 }

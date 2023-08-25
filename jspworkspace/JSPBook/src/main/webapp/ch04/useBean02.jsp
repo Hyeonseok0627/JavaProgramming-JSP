@@ -11,10 +11,11 @@
 	<jsp:useBean id="bean" class="ch04.com.dao.Calculator" />
 	<p>
 	<%
-	ch04.com.dao.Calculator bean2 = new ch04.com.dao.Calculator(); //이렇게 구현하는 것이랑 usebean 쓰는게 같은 결과값 다른 표현임
-	bean2.process(5);
 	 	int m = bean.process(5);
 	 	out.print("5의 3제곱 : " + m);
+	 	
+		ch04.com.dao.Calculator bean2 = new ch04.com.dao.Calculator(); //usebean 쓰는 방법과 다른 방법 (usebean 쓰는 것과 같은 결과값 다른 표현)
+		bean2.process(5);
 	 %>
 	 </p>
 </body>

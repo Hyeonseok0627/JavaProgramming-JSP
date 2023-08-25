@@ -50,6 +50,7 @@
 			</h3>
 			<%--p97~100에서 변경한 내용 --%>
 			<%
+				response.setIntHeader("Refresh" , 5); //176페이지 내용 추가한 부분
 				Date day = new java.util.Date();
 				String am_pm;
 				int hour = day.getHours();

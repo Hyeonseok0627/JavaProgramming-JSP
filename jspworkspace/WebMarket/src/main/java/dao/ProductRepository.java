@@ -41,4 +41,21 @@ public class ProductRepository {
 	public ArrayList<Product> getAllProducts() {
 		return listOfProducts;
 	}
+	
+	//해당 productId에 해당하는 Product 객체를 listOfProducts 리스트에서 찾아서 반환하는 메서드
+	//즉, 객체 변수 listOfProducts에 저장된 모든 상품 목록에서 상품 아이디와 일치하는 상품을 가져오는 메서드
+	public Product getProductById(String productId) {
+		Product productById = null; //productById 변수를 null로 초기화
+		
+		for (int i=0; i<listOfProducts.size(); i++) {
+			Product product = listOfProducts.get(i); //product 변수를 listOfProducts.get(i) 이렇게 리스트에서 가져오는 값으로 초기화
+			//product가 null이 아니고, product의 get.ProductId() 메서드가 null이 아니고, 상품 목록의 product.getProductId() 메서드와 가져오는 productId가 동일하면
+			//productById는 product와 동일하게 출력
+			if (product != null && product.getProductId() != null && product.getProductId().equals(productId)) {
+				productById = product;
+				break;
+			}
+		}
+		return productById;//해당 부분은 173 페이지 내용
+	}
 }
