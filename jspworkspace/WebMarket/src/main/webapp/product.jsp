@@ -1,12 +1,15 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
 <%@ page import="dto.Product" %>
+<%--209 페이지 내용 추가 --%>
+<%@ page import="dao.ProductRepository" %>
 <jsp:useBean id="productDAO" class="dao.ProductRepository" scope="session" />
 <!DOCTYPE html>
 <html>
 <head>
 <%--cdn: 부트스트랩 같이 이미 만들어져있는 html,css,js 등을 불러오는 인터넷 링크  --%>
-<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+<%--241 페이지 내용으로 변경 --%>
+<link rel="stylesheet" href="./resources/CSS/bootstrap.min.css" />
 <meta charset="UTF-8">
 <title>상품 상세 정보</title>
 </head>
@@ -20,10 +23,16 @@
 	
 	<%
 		String id = request.getParameter("id");
-		Product product = productDAO.getProductById(id);
+		ProductRepository dao = ProductRepository.getInstance();
+		Product product = dao.getProductById(id); //209 페이지 내용 추가
+		/*Product product = productDAO.getProductById(id); 202 ~9 페이지 내용하면서 해당 usebean 내용은 삭제 */ 
 	%>
 	<div class="container">
 		<div class="row">
+		<div class="col-md-5">
+			<%--242 페이지 내용 추가 -> 243 페이지 내용으로 변경 --%>
+			<img src="/upload/<%=product.getFilename()%>" style="width: 100%">
+		</div>	
 			<div class="col-md-6">
 				<h3><%=product.getPname() %></h3>
 				<p><%=product.getDescription() %>
