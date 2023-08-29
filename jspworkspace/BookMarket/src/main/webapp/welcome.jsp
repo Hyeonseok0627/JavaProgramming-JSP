@@ -2,6 +2,7 @@
 태그 안에 내용 작성법은 html 작성법인 속성종류="이름" 이런 방식으로 작성하고 한 칸 띄우고 다음 내용 추가작성 --%>
 <%@ page language="java" contentType="text/html; charset=EUC-KR"
     pageEncoding="EUC-KR"%>
+<%@ page import="java.util.Date" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,6 +40,22 @@
 			<h3>
 				<%= tagline %>
 			</h3>
+			<%
+				response.setIntHeader("Refresh" , 1); //176페이지 내용 추가한 부분
+				Date day = new java.util.Date();
+				String am_pm;
+				int hour = day.getHours();
+				int minute = day.getMinutes();
+				int second = day.getSeconds();
+				if (hour / 12 == 0) {
+					am_pm = "AM";
+				} else {
+					am_pm = "PM";
+					hour = hour - 12;
+				}
+				String CT =  hour + ":" + minute + ":" + second + " " + am_pm;
+				out.println("현재 접속 시각: " + CT + "\n");
+			%>
 			<hr>
 		</div>
 	</div>

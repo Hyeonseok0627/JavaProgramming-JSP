@@ -3,8 +3,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<%--244 페이지 내용으로 변경 --%>
+<%--244 페이지 내용으로 변경 --%>
 <link rel="stylesheet" href="./resources/CSS/bootstrap.min.css" />
+<%--282 페이지 내용 추가 --%>
+<script type="text/javascript" src="./resources/js/validation.js"></script>
 <meta charset="UTF-8">
 <title>상품 등록</title>
 </head>
@@ -22,19 +24,22 @@
 			<div class="form-gruop row">
 				<label class="col-sm-2">상품 코드</label>
 				<div class="col-sm-3">
-					<input type="text" name="productId" class="form-control">
+					<%--id="productId" 추가(282 페이지 내용 --%>
+					<input type="text" id="productId" name="productId" class="form-control">
 				</div>
 			</div>
 			<div class="form-group row">
 				<label class="col-sm-2">상품명</label>
 				<div class="col-sm-3">
-					<input type="text" name="name" class="form-control">
+					<%--id="name" 추가(282 페이지 내용 --%>
+					<input type="text" id="name" name="name" class="form-control">
 				</div>
 			</div>
 			<div class="form-group row">
 				<label class="col-sm-2">가격</label>
 				<div class="col-sm-3">
-					<input type="text" name="unitPrice" class="form-control">
+					<%--id="unitPrice" 추가(282 페이지 내용 --%>
+					<input type="text" id="unitPrice" name="unitPrice" class="form-control">
 				</div>
 			</div>
 			<div class="form-group row">
@@ -58,7 +63,8 @@
 			<div class="form-group row">
 				<label class="col-sm-2">재고 수</label>
 				<div class="col-sm-3">
-					<input type="text" name="unitsInStock" class="form-control">
+					<%--id="unitsInStock" 추가(282 페이지 내용 --%>
+					<input type="text" id="unitsInStock" name="unitsInStock" class="form-control">
 				</div>
 			</div>
 			<div class="form-group row">
@@ -83,7 +89,9 @@
 			
 			<div class="form-group row">
 				<div class="col-sm-offset-2 col-sm-10">
-					<input type="submit" class="btn btn-primary" value="등록">
+					<%--283 페이지 내용 추가 --%>
+					<input type="button" class="btn btn-primary" value="등록" onclick="CheckAddProduct()">
+					<%--<input type="submit" class="btn btn-primary" value="등록"> : 변경 전 내용--%>
 				</div>
 			</div>
 		</form>

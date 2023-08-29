@@ -4,9 +4,12 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Insert title here</title>
+<title>File Upload</title>
 </head>
 <body>
-
+	<form action="fileupload01_process.jsp" method="post" enctype="multipart/form-data">
+		<p><input type="file" name="filename"></p>
+		<p><input type="submit" value="파일 올리기"></p>
+	</form>
 </body>
 </html>

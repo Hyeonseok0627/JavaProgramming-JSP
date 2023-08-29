@@ -28,7 +28,7 @@
 				  운동<input type="checkbox" name="hobby2" >
 				  영화<input type="checkbox" name="hobby3" >
 		
-		<p> <textarea name="commit" cols="30" rows="3" 
+		<p> <textarea name="comment" cols="40" rows="4" 
 		     placeholder="가입 인사를 입력해주세요"></textarea>
 		
 		<p> <input type="submit" value="가입하기">
