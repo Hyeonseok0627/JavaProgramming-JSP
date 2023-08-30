@@ -1,11 +1,14 @@
 <%--p97~100에서 변경한 내용 --%>
 <%@ page language="java" contentType="text/html; charset=utf-8"
     pageEncoding="utf-8"%>
+    
 <%--p97~100에서 변경한 내용 --%>
 <%@ page import="java.util.Date" %>
+
 <!DOCTYPE html>
 <html>
 <head>
+
 <%--p97~100에서 변경한 내용 --%>
 <meta charset="utf-8">
 <title>Welcome</title>
@@ -48,6 +51,7 @@
 			<h3>
 				<%= tagline %>
 			</h3>
+			
 			<%--p97~100에서 변경한 내용 --%>
 			<%
 				response.setIntHeader("Refresh" , 1); //176페이지 내용 추가한 부분

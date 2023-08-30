@@ -64,6 +64,7 @@
 	newProduct.setCategory(category);
 	newProduct.setUnitsInStock(stock);
 	newProduct.setCondition(condition);
+	
 	newProduct.setFilename(fileName); //246 페이지 내용 추가
 	
 	dao.addProduct(newProduct);

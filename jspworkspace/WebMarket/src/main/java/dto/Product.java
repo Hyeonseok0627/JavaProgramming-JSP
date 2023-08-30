@@ -17,7 +17,19 @@ public class Product implements Serializable{
 		private String condition; //신상품 or 중고품 or 재생품
 		private String filename; //이미지 파일명 (239 페이지 내용 추가)
 		
+		//438 페이지 내용 추가
+		private int quantity; //장바구니에 담은 개수
 		
+		//438 페이지 내용 추가
+		public int getQuantity() {
+			return quantity;
+		}
+		
+		//438 페이지 내용 추가
+		public void setQuantity(int quantity) {
+			this.quantity = quantity;
+		}
+
 		public 	Product() {
 			super();
 		}
